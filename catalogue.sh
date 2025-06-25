@@ -39,7 +39,7 @@ VALIDATE $? "DIsabling default nodejs"
 dnf module enable nodejs:20 -y
 VALIDATE $? "Enabling nodejs 20"
 
-dnf install nodejs -y
+dnf install nodejs -y &>> $LOG_FILE
 VALIDATE $? "Installing nodejs:20"
 
 id roboshop
